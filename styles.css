@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+}
+.brandName {
+  color: coral;
+}
+/* Showcase */
+#showcase {
+  background-image: url("./img/abstract-business-code-coder-270348.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#showcase .showcase-content {
+  height: 450px;
+  width: 70%;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#showcase .showcase-content h1,
+p {
+  padding-bottom: 30px;
+}
+#showcase .btn {
+  border: 1px solid #666;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+}
+#showcase .btn:hover {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Web Dev Section */
+#web-dev {
+  background-color: #f4f4f4;
+  /* height: 200px; */
+}
+#web-dev h1 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.web-dev-content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.web-dev-content div {
+  width: 300px;
+}
+
+/* Services */
+#services {
+  background: #666;
+  padding: 35px 0;
+}
+#services .services-inner {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#services img {
+  width: 100%;
+}
+#services .card {
+  width: 30%;
+  background: #fff;
+  text-align: center;
+  /* margin: 0 10px; */
+}
+#services .card h3 {
+  padding: 50px 0;
+}
+#services .card p {
+  padding: 0 20px 50px 20px;
+}
+
+/* Digital Needs */
+.digital {
+  background-color: #f4f4f4;
+}
+.digital-inner {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.digital-inner h1 {
+  padding: 40px 0;
+}
+.digital-inner p {
+  padding-bottom: 40px;
+}
+
+/* Contact About */
+.contact-about {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contact-about h2 {
+  padding-bottom: 20px;
+}
+.contact {
+  width: 50%;
+  background-color: coral;
+  padding: 50px;
+}
+.about {
+  width: 50%;
+  background-color: rgb(15, 24, 77);
+  padding: 50px;
+  color: #fff;
+}
+
+/* Footer */
+#footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .web-dev-content {
+    display: block;
+  }
+  .web-dev-content div {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  #services .services-inner {
+    display: block;
+  }
+  #services .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-about {
+    display: block;
+  }
+  .contact,
+  .about {
+    width: 100%;
+  }
+}
